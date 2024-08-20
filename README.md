@@ -1,1 +1,1 @@
-"# Bryan Daily" 
+# Bryan Daily
