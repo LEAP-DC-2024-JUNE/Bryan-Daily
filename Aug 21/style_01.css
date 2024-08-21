@@ -1,0 +1,34 @@
+* {
+  margin: 5px;
+  box-sizing: border-box;
+}
+
+body div {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+div div {
+  background-color: aquamarine;
+  color: white;
+  font-size: 27px;
+  font-weight: bold;
+  width: 27vw;
+  height: 27%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:nth-child(1) { background-color: rgb(124, 189, 246); }
+  &:nth-child(2) { background-color: rgb(231, 86, 8); }
+  &:nth-child(3) { background-color: rgb(42, 100, 235); }
+  &:nth-child(4) { background-color: rgb(237, 206, 31); }
+  &:nth-child(5) { background-color: rgb(153, 11, 158); }
+  &:nth-child(6) { background-color: rgb(60, 255, 0); }
+  &:nth-child(7) { background-color: rgb(201, 118, 30); }
+  &:nth-child(8) { background-color: rgb(38, 151, 161); }
+  &:nth-child(9) { background-color: rgb(139, 25, 25); }
+}

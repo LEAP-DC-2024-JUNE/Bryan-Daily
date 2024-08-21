@@ -1,0 +1,22 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 20px;
+}
+
+.grid-cell {
+  text-align: center;
+  background-color: blueviolet;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.bg-black {
+  background-color: black;
+}
+.bg-yellow {
+  background-color: yellow;
+  color: black;
+}
