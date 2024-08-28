@@ -1,0 +1,65 @@
+:root {
+  --border-width: 4px;
+  --header-clr: lightgreen;
+  --nav-clr: blue;
+  --section-clr: palevioletred;
+  --article-clr: cyan;
+  --aside-clr: yellow;
+  --footer-clr: red;
+}
+
+body {
+  background-color: black;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  border: var(--border-width) solid var(--header-clr);
+  color: var(--header-clr);
+  height: 2.5em;
+}
+
+nav {
+  border: var(--border-width) solid var(--nav-clr);
+  color: var(--nav-clr);
+}
+
+section {
+  border: var(--border-width) solid var(--section-clr);
+  color: var(--section-clr);
+  text-align: center;
+  width: 70%;
+  height: 500px;
+  position: relative;
+}
+
+article {
+  border: var(--border-width) solid var(--article-clr);
+  color: var(--article-clr);
+  position: absolute;
+  width: 95%;
+  height: 430px;
+  bottom: 20px;
+  left: 2.5%;
+}
+
+aside {
+  border: var(--border-width) solid var(--aside-clr);
+  color: var(--aside-clr);
+  float: right;
+  width: 30%;
+  height: 500px;
+}
+
+footer {
+  border: var(--border-width) solid var(--footer-clr);
+  color: var(--footer-clr);
+  height: 150px;
+}
