@@ -1,22 +1,25 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
-function Menu(props) {
+function Menu() {
+  let location = useLocation();
+
   function check(name) {
-    if (name === props.current) {
-      return "active";
+    if (name === location.pathname) {
+      return 'active';
     } else {
-      return ""
+      return '';
     }
   }
+
   return (
     <div className="header-container">
       <header>
         <div className="header-left">
           <div className="logo">Brand</div>
           <nav>
-            <Link className={check('home')} to="/">Home</Link>
-            <Link className={check('about')} to="/about">About</Link>
-            <Link className={check('products')} to="/products">Products</Link>
+            <Link className={check('/')} to="/">Home</Link>
+            <Link className={check('/about')} to="/about">About</Link>
+            <Link className={check('/products')} to="/products">Products</Link>
           </nav>
         </div>
         <div className="header-right">
