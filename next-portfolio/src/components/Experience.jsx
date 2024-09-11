@@ -35,7 +35,7 @@ const Experience = () => {
     }
   ]
   return (
-    <div id="experience" className="bg-gray-50 px-20 py-24">
+    <div id="experience" className="bg-gray-50 dark:bg-gray-900 px-20 py-24">
       <div className="flex flex-col gap-12 px-8">
         <div className="flex flex-col gap-4">
           <div className="text-center">

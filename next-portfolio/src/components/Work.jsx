@@ -60,13 +60,13 @@ const Work = () => {
   ]
 
   return (
-    <div id="work" className={`px-20 py-24`}>
+    <div id="work" className="px-20 py-24">
       <div className="flex flex-col gap-12 px-8 py-0">
         <div className="flex flex-col gap-4">
           <div className="text-center">
             <Tag text="Work" />
           </div>
-          <div className="text-center text-gray-600 text-xl">
+          <div className="text-center text-xl">
             <p>Some of the noteworthy projects I have built:</p>
           </div>
         </div>
