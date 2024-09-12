@@ -8,6 +8,7 @@ import Experience from "@/components/Experience";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import { useTheme } from "next-themes";
+// import ResponsiveComponent from "@/components/ResponsiveComponent";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ function Home() {
   return (
     <div className={inter.className + " text-gray-600 dark:text-gray-300 dark:bg-gray-950"}>
       <Header toggle={toggleTheme} theme={theme}/>
+      {/* <ResponsiveComponent toggle={toggleTheme} theme={theme} /> */}
       <Hero theme={theme} />
       <About theme={theme} />
       <Skills theme={theme} />
