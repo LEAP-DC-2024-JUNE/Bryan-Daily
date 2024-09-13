@@ -16,10 +16,10 @@ const Work = () => {
         "Figma",
         "Cypress",
         "Storybook",
-        "Git"
+        "Git",
       ],
       picture: "work-card-1.png",
-      reverse: false
+      reverse: false,
     },
     {
       title: "Mentorhub",
@@ -34,10 +34,10 @@ const Work = () => {
         "Figma",
         "Cypress",
         "Storybook",
-        "Git"
+        "Git",
       ],
       picture: "work-card-2.png",
-      reverse: true
+      reverse: true,
     },
     {
       title: "iToim",
@@ -52,30 +52,37 @@ const Work = () => {
         "Figma",
         "Cypress",
         "Storybook",
-        "Git"
+        "Git",
       ],
       picture: "work-card-3.png",
-      reverse: false
-    }
-  ]
+      reverse: false,
+    },
+  ];
 
   return (
-    <div id="work" className="px-20 py-24">
-      <div className="flex flex-col gap-12 px-8 py-0">
+    <div
+      id="work"
+      className="px-4 py-16
+                              xl:px-20 xl:py-24"
+    >
+      <div
+        className="flex flex-col gap-4
+                      xl:px-8 xl:gap-12"
+      >
         <div className="flex flex-col gap-4">
           <div className="text-center">
             <Tag text="Work" />
           </div>
-          <div className="text-center text-xl">
+          <div className="text-center text-lg xl:text-xl">
             <p>Some of the noteworthy projects I have built:</p>
           </div>
         </div>
-        {workArr.map((card) => {
-          return <WorkCard data={card} />;
+        {workArr.map((card, i) => {
+          return <WorkCard key={"card-" + i} data={card} />;
         })}
       </div>
     </div>
   );
-}
+};
 
 export default Work;

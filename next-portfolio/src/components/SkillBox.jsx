@@ -1,10 +1,12 @@
-const SkillBox = ({ data }) => {
+import SkillsImages from "@/icons/SkillsImages";
+
+const SkillBox = (props) => {
   return (
     <div className="flex flex-col gap-2 items-center">
-      {data.picture}
-      <h2 className="dark:text-gray-300">{data.title}</h2>
+      <SkillsImages img={props.data} theme={props.theme} />
+      <h2 className="dark:text-gray-300">{props.data}</h2>
     </div>
   );
-}
+};
 
 export default SkillBox;

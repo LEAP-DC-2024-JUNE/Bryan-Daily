@@ -9,10 +9,10 @@ export default function TwitterLogo({ theme }) {
     >
       <path
         d="M21 1C21 1 20.3 3.1 19 4.4C20.6 14.4 9.6 21.7 1 16C3.2 16.1 5.4 15.4 7 14C2 12.5 -0.5 6.6 2 2C4.2 4.6 7.6 6.1 11 6C10.1 1.8 15 -0.6 18 2.2C19.1 2.2 21 1 21 1Z"
-        stroke={ theme == 'light' ? "#4B5563" : "#D1D5DB"}
+        stroke={theme == "light" ? "#4B5563" : "#D1D5DB"}
         strokeWidth="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
