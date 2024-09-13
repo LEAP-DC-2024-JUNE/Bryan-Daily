@@ -1,7 +1,9 @@
 import Tag from "./Tag";
 import SkillBox from "./SkillBox";
+import useHasMounted from "./useHasMounted";
 
 const Skills = ({ theme }) => {
+  let hasMounted = useHasMounted();
   const skills = [
     "Javascript",
     "Typescript",
@@ -44,7 +46,13 @@ const Skills = ({ theme }) => {
                         xl:grid-cols-8"
         >
           {skills.map((skill, i) => {
-            return <SkillBox key={"skill" + i} data={skill} theme={theme} />;
+            return (
+              <>
+                {hasMounted && (
+                  <SkillBox key={"skill" + i} data={skill} theme={theme} />
+                )}
+              </>
+            );
           })}
         </div>
       </div>
