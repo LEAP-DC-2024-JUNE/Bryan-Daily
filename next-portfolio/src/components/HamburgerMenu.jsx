@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Logo from "@/icons/Logo";
 import ExitIcon from "./ExitIcon";
 import useHasMounted from "./useHasMounted";
@@ -9,9 +9,7 @@ const HamburgerMenu = ({ isOpen, setIsOpen, toggle, theme }) => {
   let hasMounted = useHasMounted();
   return (
     <div
-      className={`bg-gray-900 bg-opacity-70 fixed top-0 left-0 ${
-        isOpen ? "w-screen" : "w-0 overflow-hidden"
-      } h-screen z-20`}
+      className={`bg-gray-900 bg-opacity-70 fixed top-0 left-0 w-screen h-screen z-20`}
     >
       <div
         className={`h-screen bg-white dark:bg-gray-950 z-30 fixed right-0 ${

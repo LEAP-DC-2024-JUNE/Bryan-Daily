@@ -50,12 +50,14 @@ function Header({ toggle, theme }) {
           </div>
         </div>
       </header>
-      <HamburgerMenu
-        isOpen={isOpen}
-        setIsOpen={setIsOpen}
-        toggle={toggle}
-        theme={theme}
-      />
+      {isOpen && (
+        <HamburgerMenu
+          isOpen={isOpen}
+          setIsOpen={setIsOpen}
+          toggle={toggle}
+          theme={theme}
+        />
+      )}
     </div>
   );
 }

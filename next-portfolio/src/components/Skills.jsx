@@ -47,11 +47,9 @@ const Skills = ({ theme }) => {
         >
           {skills.map((skill, i) => {
             return (
-              <>
-                {hasMounted && (
-                  <SkillBox key={"skill" + i} data={skill} theme={theme} />
-                )}
-              </>
+              <div key={i}>
+                {hasMounted && <SkillBox data={skill} theme={theme} />}
+              </div>
             );
           })}
         </div>
