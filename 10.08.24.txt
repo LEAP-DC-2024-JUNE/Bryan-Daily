@@ -1,0 +1,16 @@
+- Props Drilling
+    - Readability Issues
+- Context
+    - Provider and Consumer
+    - Create Context
+        > import { createContext } from "react";
+        > export const Context = createContext(...);
+    - Provide Context
+        > import { Context } from "@/utils/context";
+        > <Context.Provider value={...}>
+        >   <Component />
+        > </Context.Provider>
+    - Use Context
+        > import { useContext } from "react";
+        > import { Context } from "@/utils/context";
+        > const value = useContext(Context);
